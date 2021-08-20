@@ -15,12 +15,15 @@ public class MyBinaryTreeTest {
         // 递归
         //binaryTree.preOrderTravel(nodeTree);
         //binaryTree.inOrderTravel(nodeTree);
-        binaryTree.postOrderTravel(nodeTree);
+        //binaryTree.postOrderTravel(nodeTree);
 
         System.out.println("===============================");
         // 栈
         //binaryTree.preOrderTravelByStack(nodeTree);
         //binaryTree.inOrderTravelByStack(nodeTree);
-        binaryTree.postOrderTravelByStack(nodeTree);
+        //binaryTree.postOrderTravelByStack(nodeTree);
+
+        // 层序遍历
+        binaryTree.levelOrderTraversal(nodeTree);
     }
 }

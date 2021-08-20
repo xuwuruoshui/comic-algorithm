@@ -4,6 +4,7 @@ import club.xuwuruoshui.array.dir01linear.link.Node;
 
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class MyBinaryTree<T> {
@@ -11,7 +12,6 @@ public class MyBinaryTree<T> {
 
     /**
      * 构建二叉树
-     *
      * @param inputList 链表中取数据构建
      * @return
      */
@@ -33,7 +33,6 @@ public class MyBinaryTree<T> {
 
     /**
      * 前序遍历。    遍历顺序: 根节点==>左子树==>右子树
-     *
      * @param node 要遍历的节点
      */
     public void preOrderTravel(TreeNode<T> node) {
@@ -49,7 +48,6 @@ public class MyBinaryTree<T> {
 
     /**
      * 中序遍历。    遍历顺序: 左子树==>根节点==>右子树
-     *
      * @param node
      */
     public void inOrderTravel(TreeNode<T> node) {
@@ -65,7 +63,6 @@ public class MyBinaryTree<T> {
 
     /**
      * 后序遍历。    遍历顺序:  左子树==>右子树==>根节点
-     *
      * @param node
      */
     public void postOrderTravel(TreeNode<T> node) {
@@ -80,7 +77,6 @@ public class MyBinaryTree<T> {
 
     /**
      * 前序遍历。    遍历顺序: 根节点==>左子树==>右子树
-     *
      * @param node
      */
     public void preOrderTravelByStack(TreeNode<T> node) {
@@ -102,7 +98,6 @@ public class MyBinaryTree<T> {
 
     /**
      * 中序遍历。    遍历顺序: 左子树==>根节点==>右子树
-     *
      * @param node
      */
     public void inOrderTravelByStack(TreeNode<T> node) {
@@ -124,7 +119,6 @@ public class MyBinaryTree<T> {
 
     /**
      * 后序遍历。    遍历顺序:  左子树==>右子树==>根节点
-     *
      * @param node
      */
     public void postOrderTravelByStack(TreeNode<T> node) {
@@ -154,6 +148,25 @@ public class MyBinaryTree<T> {
                 }else if(map.get(tempNode).equals(1)){
                     node = tempNode.rightChild;
                 }
+            }
+        }
+    }
+
+    /**
+     * 层序遍历
+     * @param node
+     */
+    public void levelOrderTraversal(TreeNode<T> node){
+        Queue<TreeNode<T>> queue = new LinkedList<>();
+        queue.offer(node);
+        while (!queue.isEmpty()){
+            TreeNode<T> tempNode = queue.poll();
+            System.out.println(tempNode.data);
+            if(tempNode!=null && tempNode.leftChild!=null){
+                queue.offer(tempNode.leftChild);
+            }
+            if(tempNode!=null && tempNode.rightChild!=null) {
+                queue.offer(tempNode.rightChild);
             }
         }
     }
