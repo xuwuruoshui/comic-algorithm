@@ -12,9 +12,15 @@ public class MyBinaryTreeTest {
         MyBinaryTree<Integer> binaryTree = new MyBinaryTree<>();
         TreeNode<Integer> nodeTree = binaryTree.createBinaryTree(linkedList);
 
+        // 递归
         //binaryTree.preOrderTravel(nodeTree);
         //binaryTree.inOrderTravel(nodeTree);
         binaryTree.postOrderTravel(nodeTree);
 
+        System.out.println("===============================");
+        // 栈
+        //binaryTree.preOrderTravelByStack(nodeTree);
+        //binaryTree.inOrderTravelByStack(nodeTree);
+        binaryTree.postOrderTravelByStack(nodeTree);
     }
 }
