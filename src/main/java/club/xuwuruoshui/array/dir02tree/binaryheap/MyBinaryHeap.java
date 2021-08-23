@@ -18,7 +18,7 @@ public class MyBinaryHeap{
             array[target] = array[targetParent];
             array[targetParent] = temp;
             target = targetParent;
-            targetParent = (target - 1) / 2;
+            targetParent = (target - 1)>=0?(target-1)/2:-1;
         }
 
     }

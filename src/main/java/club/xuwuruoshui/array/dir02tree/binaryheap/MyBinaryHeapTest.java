@@ -13,6 +13,6 @@ public class MyBinaryHeapTest {
 
         array = new int[]{7, 1, 3, 10, 5, 2, 8, 9, 6};
         MyBinaryHeap.buildHeap(array);
-        System.out.println(Arrays.toString(array));// [7, 6, 5, 10, 1, 2, 8, 9, 3]
+        System.out.println(Arrays.toString(array));// [1, 5, 2, 6, 7, 3, 8, 9, 10]
     }
 }
