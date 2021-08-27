@@ -44,7 +44,7 @@ public class PriorityQueue{
         while (targetParent>=0 && temp>array[targetParent]){
             array[target] = array[targetParent];
             target = targetParent;
-            targetParent = (targetParent-1)>=0?(targetParent-1)/2:-1;
+            targetParent = (targetParent-1)>>1;
         }
         array[target] = temp;
 
