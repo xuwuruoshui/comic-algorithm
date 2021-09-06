@@ -1,10 +1,10 @@
 package club.xuwuruoshui.array.test;
 
 
-import org.dom4j.DocumentException;
+
 
 public class Test {
-    public static void main(String[] args) throws DocumentException {
+    public static void main(String[] args)  {
 
         String a ="<?xml version=\"1.0\" encoding=\"GBK\"?><transaction><header><tranCd>KZGT001002"+
                 "</tranCd><seqNb>20201023143456000272</seqNb><retCd>000000</retCd><desc>交易成功></desc>"+
