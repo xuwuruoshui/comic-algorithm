@@ -15,7 +15,7 @@ public class Test {
                 "<v1 id=\"2\"><acctNo>6214586480019311056</acctNo></v1>"+
                 "<v2 id=\"3\"><acctNo>6214586480019321089</acctNo></v2>"+
                 "</list></body></transaction>";
-
+        System.out.println(a);
 
     }
 }
