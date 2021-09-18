@@ -1,4 +1,4 @@
-package club.xuwuruoshui.array.practice.dir01linkedListExistCircle;
+package club.xuwuruoshui.array.practice.test01linkedListExistCircle;
 
 import club.xuwuruoshui.array.dir01linear.link.Node;
 

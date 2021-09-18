@@ -1,4 +1,4 @@
-package club.xuwuruoshui.array.practice.dir02minStack;
+package club.xuwuruoshui.array.practice.test02minStack;
 
 import java.util.Stack;
 

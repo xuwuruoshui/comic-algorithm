@@ -1,4 +1,4 @@
-package club.xuwuruoshui.array.practice.dir05maxadjacentdifferenceofarray;
+package club.xuwuruoshui.array.practice.test05maxadjacentdifferenceofarray;
 
 public class Bucket {
     private Integer max;

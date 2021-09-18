@@ -1,4 +1,4 @@
-package club.xuwuruoshui.array.practice.dir04integerpowerof2;
+package club.xuwuruoshui.array.practice.test04integerpowerof2;
 
 public class Integerpowerof2 {
     public static void main(String[] args) {
