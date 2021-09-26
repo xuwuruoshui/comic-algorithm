@@ -1,4 +1,4 @@
-package club.xuwuruoshui.array.practice.test03greatestCommonDivisor;
+package club.xuwuruoshui.array.practice.test03greatestcommondivisor;
 
 public class GreatestCommonDivisor {
     public static void main(String[] args) {
