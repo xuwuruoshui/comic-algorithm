@@ -9,15 +9,14 @@ public class BigIntAdd {
         long a = 9223372036854775807L;
         long b = 9223372036854775807L;
 
-//        List<String> list = method1(a, b);
-//        printValue(list);
+//      List<String> list = method1(a, b);
+//      printValue(list);
 
-        method2(a,b);
-
+        method2("42352436520758914375","99999999999999412386998");
     }
 
     // 按9位数拆分，避免数组过长
-    private static void method2(long a, long b) {
+    private static void method2(String a, String b) {
         int[] aArr = getIntArr(a);
         int[] bArr = getIntArr(b);
 
@@ -60,8 +59,8 @@ public class BigIntAdd {
             System.out.printf(cArr[l]);
         }
     }
-    private static int[] getIntArr(long num){
-        String numStr = String.valueOf(num);
+    private static int[] getIntArr(String numStr){
+
         int arr[] = new int[numStr.length()%9==0?numStr.length()/9:(numStr.length()/9)+1];
         int index = numStr.length();
         for (int i = arr.length-1; i >=0; i--) {
